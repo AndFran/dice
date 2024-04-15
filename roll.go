@@ -16,3 +16,7 @@ func Seed(n int64) {
 func Roll(sides int) int {
 	return rand.Intn(sides) + 1
 }
+
+func RollRandomSize() int {
+	return rand.Intn(rand.Intn(2000)+1) + 1
+}
